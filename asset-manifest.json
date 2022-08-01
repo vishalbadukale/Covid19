@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-dashboard/static/css/main.ff683678.css",
-    "main.js": "/react-dashboard/static/js/main.40ee7fea.js",
-    "index.html": "/react-dashboard/index.html",
-    "main.ff683678.css.map": "/react-dashboard/static/css/main.ff683678.css.map",
-    "main.40ee7fea.js.map": "/react-dashboard/static/js/main.40ee7fea.js.map"
+    "main.css": "/Covid19app/static/css/main.ff683678.css",
+    "main.js": "/Covid19app/static/js/main.40ee7fea.js",
+    "index.html": "/Covid19app/index.html",
+    "main.ff683678.css.map": "/Covid19app/static/css/main.ff683678.css.map",
+    "main.40ee7fea.js.map": "/Covid19app/static/js/main.40ee7fea.js.map"
   },
   "entrypoints": [
     "static/css/main.ff683678.css",
