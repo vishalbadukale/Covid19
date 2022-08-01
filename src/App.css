@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.App{
+	background: #f7f9f5 none repeat scroll 0% 0%;
+}
+.input:focus,
+.form-control:focus,.btn:focus,.btn-check:focus{
+	box-shadow: none;
+}
+.searchArea,
+.searchBox {
+	display: flex;
+	flex-direction: row;
+}
+.searchBox {
+	justify-content: space-between;
+}
+.searchArea {
+	justify-content: flex-end;
+}
+.filter {
+	font-size: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.state,
+.district {
+	width: 100%;
+	
+}
+.stateHead{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs{
+position: relative;
+}
+.searchArea input {
+	background: white;
+	color: black;
+	border: 1px solid black;
+	outline: none;
+	box-shadow: none;
+	padding: 5px 5%;
+}
+.state i,
+.district i {
+	position: absolute;
+	top: 25%;
+	right: 5%;
+	cursor: pointer;
+	font-size: 1rem;
+}
+.search_box {
+	width: 550px;
+	background: #fff;
+	height: 65px;
+	border-radius: 5px;
+	display: flex;
+	padding: 10px;
+	box-shadow: 0 8px 6px -10px #b3c6ff;
+}
+.dropdown {
+	width: 150px;
+	border-right: 2px solid #dde2f1;
+	color: #9fa3b1;
+	position: relative;
+	cursor: pointer;
+}
+.dropdown .deafault_option {
+	text-transform: uppercase;
+	padding: 13px 15px;
+	font-size: 14px;
+}
+.dropdown ul {
+	position: absolute;
+	top: 70px;
+}
+.searchData{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 14px;
+    
+}
+.searchData p{
+    padding: 5px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+.searchData p:hover{
+    background: #dde2f1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* btn data */
+.navBtn{
+	padding: 50px 0;
+}
+.heading{
+	padding-bottom: 50px;
+	font-weight: 900;
+}
+.stateHeadings,.distHeadings{
+	font-weight: 900;
+	height: 85px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 15px rgb(217, 215, 215);
+}
+.dataBtn{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.dataBtn .btns{
+	
+}
+/* home css */
+.chart{
+	width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .ss,.home .card-header{
+box-shadow: 0px 0px 15px rgb(217, 215, 215);
+	background: white;
+}
+.card{
+	box-shadow: 0px 0px 15px rgb(217, 215, 215);
+}
+.chart .row{
+	margin-left: 0;
+	margin-right: 0;
+
+}
+.home .chart .vv{
+	box-shadow: none;
+	background: white;
+}
+.sort{
+	font-size: 12px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.fHead{
+	padding-bottom: 25px;
+}
+th:hover .sort{
+	visibility: visible;
+} 
+.fa-arrow-up-long{
+
 }
