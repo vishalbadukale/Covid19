@@ -1,4 +1,5 @@
 import React from 'react';
+import NotFound from './NotFound';
 import SearchFilter from './SearchFilter';
 import {
 	SearchKeyword,
@@ -9,42 +10,27 @@ import {
 import DataVisualizer from './visualization';
 
 export default function HomeData(){
-	const { sortProps, clickHandler } = SortingStateHook();
+	const { sortProps} = SortingStateHook();
 	const { keyword, handler } = SearchKeyword();
-
 
 	let { filtered: districtArray } = DistrictDataHook(keyword, sortProps);
 	let { filtered: tableData } = StateDataHook(keyword, sortProps);
 
-	let dArray = districtArray.length;
-	let sArray = tableData.length;
-
-
-
+	console.log(handler);
 	return (
 		<>
-			<div className="home">
+			<div className="home ">
 				<SearchFilter
 					header="Search COVID19 Data"
 					handler={handler}
 				></SearchFilter>
-				<div className="chart mt-5">
+				<div className="chart ounded-3 mt-5">
 					<div className="row">
-						{dArray === '' || sArray === '' ? (
-							<>
-								<StateChart tableData={tableData} />{' '}
-								<DistChart districtArray={districtArray} />
-							</>
-						) : dArray === 0 ? (
-							<StateChart tableData={tableData} />
-						) : sArray === 0 ? (
-							<DistChart districtArray={districtArray} />
-						) : (
-							<>
-								<StateChart tableData={tableData} />{' '}
-								<DistChart districtArray={districtArray} />
-							</>
-						)}
+						<StateChart tableData={tableData} />{' '}
+						<DistChart districtArray={districtArray} />
+						<NotFound/>
+
+						
 					</div>
 				</div>
 			</div>

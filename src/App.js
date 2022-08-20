@@ -1,6 +1,6 @@
 import './App.css';
-import HomeData from './Component/HomeData';
 import RouterData from './Component/RouterData';
+import NotFound from './Component/NotFound';
 function App() {
 	return (
 		<div className="App">

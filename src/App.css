@@ -119,6 +119,7 @@ position: relative;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 0px 15px rgb(217, 215, 215);
+	border-radius: 0.5rem;
 }
 .dataBtn{
 	display: flex;
@@ -138,9 +139,11 @@ position: relative;
  .ss,.home .card-header{
 box-shadow: 0px 0px 15px rgb(217, 215, 215);
 	background: white;
+	border-radius: 0.5rem;
 }
 .card{
 	box-shadow: 0px 0px 15px rgb(217, 215, 215);
+	border-radius: 0.5rem;
 }
 .chart .row{
 	margin-left: 0;
@@ -162,6 +165,17 @@ box-shadow: 0px 0px 15px rgb(217, 215, 215);
 th:hover .sort{
 	visibility: visible;
 } 
-.fa-arrow-up-long{
 
+.notfound{
+
+	height: 80vh;
+	box-shadow: 0px 0px 15px rgb(217, 215, 215);
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.notfound i,.notfound h1{
+	color: grey;
 }

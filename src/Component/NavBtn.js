@@ -11,7 +11,7 @@ export default function NavBtn() {
 				<div className="container">
 					<div className="dataBtn">
 					<div className="btns mx-3">
-						<Link to='/' className='btn btn-success'> Home</Link>
+						<Link to='/' className='btn btn-success active'> Home</Link>
 					</div>
 						<div className="btns mx-3">
 							<Link to="state" className="btn btn-primary">

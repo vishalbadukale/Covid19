@@ -69,7 +69,7 @@ export default function DataVisualizer(props) {
 
 	return (
 		<>
-			<section className="my-5 vv">
+			<section className="my-5 rounded vv">
 				<div className="container ">
 					<div className="stateHeading"></div>
 					<Bar config={config} data={data}></Bar>

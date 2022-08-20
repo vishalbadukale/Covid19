@@ -2,7 +2,7 @@ import React from 'react'
 import { SortingStateHook } from './searchHandler';
 
 export default function SortArrow() {
-    const { sortProps, clickHandler } = SortingStateHook();
+    const { sortProps } = SortingStateHook();
     console.log(sortProps.order+" " + sortProps.colName)
   return (
 		<div className="sort text-center">

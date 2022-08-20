@@ -1,6 +1,6 @@
 {
 	"name": "covid19app",
-	"homepage": "https://vishalbadukale.github.io/react-dashboard",
+	"homepage": "https://vishalbadukale.github.io/Covid19app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
